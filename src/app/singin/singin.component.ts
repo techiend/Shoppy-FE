@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
+
 
 @Component({
   selector: 'app-singin',
@@ -8,8 +9,11 @@ import { Router } from '@angular/router';
 })
 export class SinginComponent implements OnInit {
 
-  constructor(private router: Router) { }
 
+  birthday = new Date(1988, 3, 15); // April 15, 1988 -- since month parameter is zero-based
+
+  constructor(private router: Router) { }
+ 
   ngOnInit(): void {
   }
 

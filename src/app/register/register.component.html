@@ -1,1 +1,21 @@
-<p>register works!</p>
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <h1 style="text-align: center;">{{titulo}}</h1>
+
+        <div class="fadeIn first">
+            <!-- <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" /> -->
+        </div>
+
+        <form>
+            <input type="text" id="name" class="fadeIn second" name="name" placeholder="Nombre" [(ngModel)]="nombre">
+            <input type="text" id="name" class="fadeIn second" name="name" placeholder="Apellido" [(ngModel)]="apellido">
+            <input type="submit" value = "Registrar" (click) = "registrarUsuario()">
+        </form>
+
+        <!-- <router-outlet></router-outlet> -->
+        <br>
+
+        <p *ngIf = registrado>{{mensaje}} {{nombre}} {{apellido}}</p>
+
+    </div>
+</div>
