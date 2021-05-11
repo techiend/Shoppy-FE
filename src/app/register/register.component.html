@@ -1,6 +1,10 @@
 <div class="wrapper fadeInDown">
     <div id="formContent">
-        <h1 style="text-align: center;">{{titulo}}</h1>
+        <!-- <h1 style="text-align: center;">{{titulo}}</h1> -->
+
+        <!-- Tabs Titles -->
+      <h2 class="active"> Natural </h2>
+      <h2 class="inactive underlineHover">Empresarial</h2>
 
         <div class="fadeIn first">
             <!-- <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" /> -->
@@ -9,6 +13,11 @@
         <form>
             <input type="text" id="name" class="fadeIn second" name="name" placeholder="Nombre" [(ngModel)]="nombre">
             <input type="text" id="name" class="fadeIn second" name="name" placeholder="Apellido" [(ngModel)]="apellido">
+            <input type="text" id="name" class="fadeIn second" name="name" placeholder="Correo electrónico">
+            <input type="text" id="name" class="fadeIn second" name="name" placeholder="Clave">
+            <input type="text" id="name" class="fadeIn second" name="name" placeholder="Género">
+            <input type="text" id="name" class="fadeIn second" name="name" placeholder="Teléfono">
+            <input type="text" id="name" class="fadeIn second" name="name" placeholder="Fecha de nacimiento">
             <input type="submit" value = "Registrar" (click) = "registrarUsuario()">
         </form>
 
